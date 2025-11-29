@@ -6,6 +6,7 @@ test(`launch two separate browser instances using Playwright`,async ()=>{
    const browserContext = await browser.newContext();
    const page = await browserContext.newPage();
     await page.goto(`https://www.redbus.in`);
+    //we must use const to use the variables storing title and url
     console.log(page.title());
     console.log(page.url());
 

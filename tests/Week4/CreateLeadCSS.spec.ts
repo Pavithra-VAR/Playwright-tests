@@ -22,6 +22,5 @@ test(`Create a Lead`,async ()=>{
     await page.locator(`#createLeadForm_annualRevenue`).fill('10000')
     await page.locator(`#createLeadForm_primaryPhoneNumber`).fill('1234567890')
     await page.locator(`.smallSubmit`).click();
-    await page.waitForTimeout(10000);
 
 })
