@@ -24,11 +24,10 @@ await page.locator(`#updateLeadForm_departmentName`).fill('QA dept')
 await page.locator(`#updateLeadForm_description`).fill(`Updated the details`)
 await page.locator(`input[value='Update']`).click();
 await page.waitForTimeout(3000);
-//fetching values and assertions are yet to be discussed
-// Print page title
+
 const title = await page.title();
 console.log("Page title after update:", title);
 })
-
+//fetching values and assertions are yet to be discussed
 
    

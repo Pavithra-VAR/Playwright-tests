@@ -7,9 +7,8 @@ const browser = await chromium.launch ({channel:"msedge", headless:false});
 const context = await browser.newContext();
 const page = await context.newPage();
 await page.goto('https://login.salesforce.com/ ');
-await page.getByLabel('Username').fill('');
-await page.getByLabel('Password').fill('Arundanica@3');
-// 4. Click Login 
+await page.locator(`#username`).fill('pavithra.ri792461@agentforce.com');
+await page.locator(`#password`).fill('Shr@van@123#');
 await page.locator(`#Login`).click();
 })
 
